@@ -6,11 +6,19 @@ export async function generateMetadata(): Promise<Metadata> {
     title: 'Next.js Social Share Buttons',
     description:
       'Accessible social sharing buttons for Next.js with copy-to-clipboard support.',
+    authors: [
+      {
+        name: 'Alexandra Caulea',
+        url: 'https://www.linkedin.com/in/alexandracaulea/',
+      },
+    ],
     openGraph: {
       title: 'Next.js Social Share Buttons',
       description:
         'Accessible and animated social sharing buttons for Next.js with copy-to-clipboard support.',
       url: 'https://social-sharing-buttons-nextjs.vercel.app/',
+      type: 'article',
+      publishedTime: '2025-06-19T12:00:00Z',
       siteName: 'Next.js Share Buttons',
       images: [
         {
@@ -21,7 +29,6 @@ export async function generateMetadata(): Promise<Metadata> {
         },
       ],
       locale: 'en_US',
-      type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
