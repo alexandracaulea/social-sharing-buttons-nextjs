@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Social Share Buttons
 
-## Getting Started
+A lightweight and accessible set of social sharing buttons for Next.js projects. Includes **Copy to Clipboard**, **WhatsApp**, **Twitter**, **Facebook**, and **LinkedIn** share options — built with accessibility in mind, tested using **VoiceOver**, and styled with **Tailwind CSS**.
 
-First, run the development server:
+This component was initially developed for a project I’m currently working on and later integrated into my personal website.  
+👉 **Check it out live here:** [https://www.alexandracaulea.com/snippets/redirect-api-to-404-nextjs](https://www.alexandracaulea.com/snippets/redirect-api-to-404-nextjs)
+
+---
+
+## 🚀 Features
+
+- Share to: WhatsApp, Twitter, Facebook, LinkedIn
+- Copy to Clipboard
+- Accessible and tested using VoiceOver
+- Styled using Tailwind CSS
+- Smooth animation via Motion - for animating the clipboard success message
+
+---
+
+## 📸 Demo
+
+👉 Check it out live here: https://social-sharing-buttons-nextjs.vercel.app/
+
+---
+
+## 🛠 Tech Stack
+
+- [Next.js](https://nextjs.org/)
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [clsx](https://github.com/lukeed/clsx)
+- [tailwind-merge](https://github.com/dcastil/tailwind-merge)
+- [Motion](https://motion.dev/)
+
+---
+
+## ♿ Accessibility
+
+Accessibility is a priority for this project.
+
+- `aria-live` region for announcing the "Copied:" message, including the URL
+- Copy-to-clipboard feedback text is:
+  - **programmatically updated** using a `notificationKey` to force screen readers to re-announce the copied text
+
+---
+
+## 🧪 Getting Started
+
+1. Clone the repo
+
+```bash
+git clone https://github.com/alexandracaulea/social-sharing-buttons-nextjs.git
+cd social-sharing-buttons-nextjs
+```
+
+2. Install dependencies
+
+```bash
+npm install
+```
+
+3. Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Usage Example
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```tsx
+import ShareSection from './components/ShareSection';
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+export default function BlogPostPage() {
+  return (
+    <div>
+      {/* Your blog content here */}
 
-## Learn More
+      <ShareSection />
+    </div>
+  );
+}
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- GitHub: [@alexandracaulea](https://github.com/alexandracaulea)
+- My website: [alexandracaulea.com](https://www.alexandracaulea.com/)
