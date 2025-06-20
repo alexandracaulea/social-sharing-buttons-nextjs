@@ -2,7 +2,7 @@ import ShareButton from './share-button';
 import CopyToClipboardButton from './copy-to-clipboard-button';
 import FacebookIcon from '../icons/facebook-icon';
 import LinkedinIcon from '../icons/linkedin-icon';
-import TwitterIcon from '../icons/twitter-icon';
+import XIcon from '../icons/x-icon';
 import WhatsappIcon from '../icons/whatsapp-icon';
 
 export default function ShareSection() {
@@ -25,11 +25,7 @@ export default function ShareSection() {
           />
         </li>
         <li>
-          <ShareButton
-            platform='twitter'
-            icon={<TwitterIcon />}
-            label='Share on X'
-          />
+          <ShareButton platform='x' icon={<XIcon />} label='Share on X' />
         </li>
         <li>
           <ShareButton

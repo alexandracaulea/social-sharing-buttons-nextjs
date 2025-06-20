@@ -1,7 +1,7 @@
 import { IconProps } from '@/types/icons';
 import { cn } from '@/utils/cn';
 
-const TwitterIcon = ({ className, ...props }: IconProps) => (
+const XIcon = ({ className, ...props }: IconProps) => (
   <svg
     {...props}
     className={cn('group', className)}
@@ -19,4 +19,4 @@ const TwitterIcon = ({ className, ...props }: IconProps) => (
   </svg>
 );
 
-export default TwitterIcon;
+export default XIcon;

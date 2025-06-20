@@ -1,6 +1,6 @@
 # Next.js Social Share Buttons
 
-A lightweight and accessible set of social sharing buttons for Next.js projects. Includes **Copy to Clipboard**, **WhatsApp**, **Twitter**, **Facebook**, and **LinkedIn** share options — built with accessibility in mind, tested using **VoiceOver**, and styled with **Tailwind CSS**.
+A lightweight and accessible set of social sharing buttons for Next.js projects. Includes **Copy to Clipboard**, **WhatsApp**, **X**, **Facebook**, and **LinkedIn** share options — built with accessibility in mind, tested using **VoiceOver**, and styled with **Tailwind CSS**.
 
 This component was initially developed for a project I’m currently working on and later integrated into my personal website.  
 👉 **Check it out live here:** [https://www.alexandracaulea.com/snippets/redirect-api-to-404-nextjs](https://www.alexandracaulea.com/snippets/redirect-api-to-404-nextjs)
@@ -9,7 +9,7 @@ This component was initially developed for a project I’m currently working on 
 
 ## 🚀 Features
 
-- Share to: WhatsApp, Twitter, Facebook, LinkedIn
+- Share to: WhatsApp, X, Facebook, LinkedIn
 - Copy to Clipboard
 - Accessible and tested using VoiceOver
 - Styled using Tailwind CSS

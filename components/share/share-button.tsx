@@ -3,7 +3,7 @@
 import { ReactNode, useEffect, useState } from 'react';
 
 type ShareButtonProps = {
-  platform: 'facebook' | 'twitter' | 'linkedin' | 'whatsapp';
+  platform: 'facebook' | 'x' | 'linkedin' | 'whatsapp';
   icon: ReactNode;
   label: string;
 };
@@ -23,10 +23,10 @@ export default function ShareButton({
       case 'facebook':
         url = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
         break;
-      case 'twitter':
-        const twitterMessage = `${document.title} - ${window.location.href}`;
+      case 'x':
+        const xMessage = `${document.title} - ${window.location.href}`;
         url = `https://twitter.com/intent/tweet?text=${encodeURIComponent(
-          twitterMessage,
+          xMessage
         )}`;
         break;
       case 'linkedin':
@@ -44,9 +44,9 @@ export default function ShareButton({
   }, [platform]);
 
   return (
-    <a href={shareUrl} target="_blank" rel="noopener noreferrer">
+    <a href={shareUrl} target='_blank' rel='noopener noreferrer'>
       {icon}
-      <span className="sr-only">{label}</span>
+      <span className='sr-only'>{label}</span>
     </a>
   );
 }
